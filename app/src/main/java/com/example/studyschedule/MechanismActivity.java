@@ -16,7 +16,7 @@ public class MechanismActivity extends AppCompatActivity {
     }
 
     public void goToLink1(View view) {
-        Intent toLink1 = new Intent(Intent.ACTION_VIEW, Uri.parse(http://www.terumo-taion.jp/health/temperature/06.html));
+        Intent toLink1 = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.terumo-taion.jp/health/temperature/06.html"));
         startActivity(toLink1);
     }
 }
