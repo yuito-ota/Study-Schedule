@@ -34,4 +34,6 @@ public class MainActivity extends AppCompatActivity {
         Intent toHandle = new Intent(this,HandleActivity.class);
         startActivity(toHandle);
     }
+
+
 }

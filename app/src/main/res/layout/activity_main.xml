@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/ic_launcher_foreground"
     tools:context=".MainActivity">
 
     <View
         android:id="@+id/titleBackground"
         android:layout_width="0dp"
         android:layout_height="195dp"
-        android:background="#4A817C"
+        android:background="#C72060C6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +27,11 @@
         android:text="BT_Tracker"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@android:color/primary_text_dark"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#F436D7"
+        android:textColorLink="#FFFFFF"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/titleBackground"
         app:layout_constraintStart_toEndOf="@+id/titleImage" />
 
@@ -38,11 +42,13 @@
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginBottom="16dp"
+        android:background="@drawable/ic_launcher_foreground"
         app:layout_constraintBottom_toBottomOf="@+id/titleBackground"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/btn_star" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="387dp"
         android:layout_height="334dp"
         android:layout_marginLeft="8dp"
@@ -66,7 +72,7 @@
             android:paddingTop="10dp"
             android:text="@string/log_body_temperature"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#03A9F4"
+            android:textColor="#2196F3"
             android:textColorHighlight="#E91E63" />
 
         <View
@@ -86,7 +92,8 @@
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="@string/check_normal_range"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#2196F3" />
 
         <View
             android:id="@+id/view3"
@@ -101,7 +108,8 @@
             android:layout_weight="1"
             android:onClick="goToMechanismActivity"
             android:text="@string/mechanism_of_fever"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#2196F3" />
 
         <View
             android:id="@+id/view4"
@@ -116,8 +124,20 @@
             android:layout_weight="1"
             android:onClick="goToHandleActivity"
             android:text="@string/handling_fever"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#2196F3" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/SetReminderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleBackground"
+        app:layout_constraintVertical_bias="0.854" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
